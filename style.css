@@ -81,9 +81,6 @@ form { display:flex; flex-direction:column; gap:10px; max-width:480px; }
 input, select, textarea, button[type="submit"] { padding:10px; border-radius:6px; border:1px solid #d0d8ea; }
 button[type="submit"] { background:#003c7e; color:white; border:none; cursor:pointer; }
 
-/* Footer */
-footer { margin-top:20px; padding:20px; text-align:center; color:#fff; background:#002d5d; border-radius:8px; max-width:1200px; margin-left:auto; margin-right:auto; }
-
 /* Responsive */
 @media (max-width:900px) {
   .container { flex-direction:column; padding:10px; }
