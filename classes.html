@@ -1,9 +1,97 @@
-
 <!doctype html>
 <html lang="bg">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Курсове - Мегданъ</title><link rel="stylesheet" href="style.css"></head>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Курсове - Мегданъ</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    overflow-x: hidden;
+  }
+
+  /* Лява лента */
+  .sidebar-left {
+    width: 150px;
+    background-image: url('12.png');
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 400px auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  /* Дясна лента */
+  .sidebar-right {
+    width: 150px;
+    background-image: url('12.png');
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 400px auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    transform: scaleX(-1);
+  }
+
+  /* Основен контейнер */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+  }
+
+  header nav {
+    background: #fff;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  section.content {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+  }
+
+  h1, h2 {
+    color: #b30000;
+  }
+</style>
+</head>
 <body>
 
+<div class="sidebar-left"></div>
+<div class="sidebar-right"></div>
+
+<div class="container">
 <header>
 <nav>
   <div class="logo">Мегданъ</div>
@@ -17,7 +105,7 @@
 </nav>
 </header>
 
-<main class="container">
+<main>
   <section class="content">
     <h1>Курсове</h1>
     <p>Предлагаме групи за различни възрасти и нива. Виж графика и избери подходящата група.</p>
@@ -35,6 +123,7 @@
     </div>
   </section>
 </main>
+</div>
 
 </body>
 </html>
