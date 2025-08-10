@@ -1,13 +1,12 @@
 
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="bg">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>МегданЪ</title>
-<body>
-
-<header>
+<title>МегданЪ</title> 
+  
+  <header>
 <nav>
   <div class="logo">Мегданъ</div>
   <ul>
@@ -20,6 +19,17 @@
 </nav>
 </header>
   
+<style>
+  
+
+  /* Ресет и основен стил */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f6ff;
+  }
+
+ 
   nav .logo {
     font-size: 1.4em;
     font-weight: bold;
@@ -45,8 +55,8 @@
   nav ul li a:hover {
     text-decoration: underline;
   }
-  
-/* Лява шевица */
+
+  /* Лява шевица */
   .sidebar-left {
     width: 150px;
     background-image: url('12.png');
@@ -57,7 +67,7 @@
     top: 60px;
     bottom: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 2000;
   }
 
   /* Дясна шевица */
@@ -71,7 +81,7 @@
     top: 60px;
     bottom: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 2000;
     transform: scaleX(-1);
   }
 
