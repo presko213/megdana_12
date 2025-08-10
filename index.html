@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мегданъ - Начало</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+  <div class="logo">Мегданъ</div>
+  <ul>
+    <li><a href="index.html">Начало</a></li>
+    <li><a href="why.html">Защо да танцувам</a></li>
+    <li><a href="classes.html">Курсове</a></li>
+    <li><a href="gallery.html">Галерия</a></li>
+    <li><a href="contact.html">Контакти</a></li>
+  </ul>
+</nav>
+</header>
+
+<main class="container">
+  <aside class="sidebar"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Bulgarian_embroidery_motif.svg/1280px-Bulgarian_embroidery_motif.svg.png" alt="шевица"></aside>
+  <section class="content">
+    <div class="hero">
+      <div class="hero-inner">
+        <h1>Добре дошли в "Мегданъ"</h1>
+        <p>Школа за български народни танци - традиция, ритъм и радост.</p>
+        <a class="btn" href="contact.html">Запиши се</a>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <h2>Предстояши събития</h2>
+      <div class="events">
+        <div class="event"><strong>25 Септември 2025</strong> - Участие на есенен фолклорен фестивал</div>
+        <div class="event"><strong>10 Октомври 2025</strong> - Открит урок за начинаещи</div>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <h2>Последни снимки</h2>
+      <div class="slider" id="mainSlider">
+        <div class="slides">
+          <div class="slide"><img src="images/slide1.jpg" alt="Слайд 1"><div class="slide-caption"><h3>Ритъмът на мегдана</h3><p>Традиция и емоция</p></div></div>
+          <div class="slide"><img src="images/slide2.jpg" alt="Слайд 2"><div class="slide-caption"><h3>Хоро на открито</h3><p>Слънце, музика и усмивки</p></div></div>
+          <div class="slide"><img src="images/slide3.jpg" alt="Слайд 3"><div class="slide-caption"><h3>Деца в репетиция</h3><p>Бъдещето е в нашите стъпки</p></div></div>
+        </div>
+        <div class="slider-controls">
+          <button id="prevBtn">&#10094;</button>
+          <button id="nextBtn">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+<footer>&copy; 2025 Мегданъ</footer>
+
+<script>
+// Simple slider
+(function(){
+  const slidesEl = document.querySelector('.slides');
+  const slides = document.querySelectorAll('.slide');
+  let index = 0;
+  const total = slides.length;
+  const prev = document.getElementById('prevBtn');
+  const next = document.getElementById('nextBtn');
+  function show(i){ slidesEl.style.transform = 'translateX(' + (-i*100) + '%)'; }
+  prev.addEventListener('click', function(){ index = (index-1+total)%total; show(index); });
+  next.addEventListener('click', function(){ index = (index+1)%total; show(index); });
+  // auto rotate
+  setInterval(function(){ index = (index+1)%total; show(index); }, 5000);
+})();
+</script>
+</body>
+</html>

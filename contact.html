@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html lang="bg">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Контакти - Мегданъ</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<header>
+<nav>
+  <div class="logo">Мегданъ</div>
+  <ul>
+    <li><a href="index.html">Начало</a></li>
+    <li><a href="why.html">Защо да танцувам</a></li>
+    <li><a href="classes.html">Курсове</a></li>
+    <li><a href="gallery.html">Галерия</a></li>
+    <li><a href="contact.html">Контакти</a></li>
+  </ul>
+</nav>
+</header>
+
+<main class="container">
+  <aside class="sidebar"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Bulgarian_embroidery_motif.svg/1280px-Bulgarian_embroidery_motif.svg.png" alt="шевица"></aside>
+  <section class="content">
+    <h1>Контакти</h1>
+    <p>Имейл: <a href="mailto:megdan@dance.bg">megdan@dance.bg</a></p>
+    <p>Телефон: 0888 123 456</p>
+
+    <div class="section-block">
+      <h2>Запиши се (изпращане към Google Form)</h2>
+      <p>Ако имаш Google Form, можеш да го вгадиш тук. По-долу е пример за локална форма — ще трябва да промениш action към твоя Google Form URL, ако искаш отговорите в таблица.</p>
+      <form id="signupForm" onsubmit="return fakeSubmit(event)">
+        <input type="text" name="name" placeholder="Име" required>
+        <input type="email" name="email" placeholder="Имейл" required>
+        <select name="level" required>
+          <option value="">Избери ниво</option>
+          <option value="beginner">Начинаещи</option>
+          <option value="intermediate">Средно</option>
+          <option value="kids">Деца</option>
+        </select>
+        <textarea name="msg" placeholder="Допълнително съобщение"></textarea>
+        <button type="submit">Изпрати</button>
+      </form>
+      <p id="formResult" style="margin-top:8px;color:green;display:none;">Благодарим! Вашето записване е получено.</p>
+    </div>
+
+    <div class="section-block">
+      <h2>Вграден Google Form (пример)</h2>
+      <p>Място за вграждане на Google Form. Замести href с твоя embed линк.</p>
+      <!-- Пример (замести src с твоя embed код от Google Forms) -->
+      <iframe src="" width="100%" height="480" style="border:1px solid #ddd;"></iframe>
+    </div>
+
+  </section>
+</main>
+<footer>&copy; 2025 Мегданъ</footer>
+
+<script>
+function fakeSubmit(e){
+  e.preventDefault();
+  document.getElementById('formResult').style.display='block';
+  // Ако искаш да пращаш на Google Form - сетни form.action и използвай POST
+  return false;
+}
+</script>
+</body>
+</html>

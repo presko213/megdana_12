@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html lang="bg">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Галерия - Мегданъ</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<header>
+<nav>
+  <div class="logo">Мегданъ</div>
+  <ul>
+    <li><a href="index.html">Начало</a></li>
+    <li><a href="why.html">Защо да танцувам</a></li>
+    <li><a href="classes.html">Курсове</a></li>
+    <li><a href="gallery.html">Галерия</a></li>
+    <li><a href="contact.html">Контакти</a></li>
+  </ul>
+</nav>
+</header>
+
+<main class="container">
+  <aside class="sidebar"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Bulgarian_embroidery_motif.svg/1280px-Bulgarian_embroidery_motif.svg.png" alt="шевица"></aside>
+  <section class="content">
+    <h1>Галерия</h1>
+    <p>Добави свои снимки в папката <code>/images</code>. Всяка снимка може да има кратък текст под нея (подписи).</p>
+
+    <div class="section-block">
+      <h2>Как да добавиш снимка</h2>
+      <ol>
+        <li>Качи файл с име като <code>tanc1.jpg</code> в папката <code>images/</code>.</li>
+        <li>Отвори <code>gallery.html</code> и намери блоковете с <code>&lt;div class="gallery-item"&gt;</code>.</li>
+        <li>Смени <code>src="images/placeholder.jpg"</code> с твоя файл и промени текста в <code>&lt;p&gt;</code>.</li>
+      </ol>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/placeholder1.jpg" alt="Снимка 1">
+        <p class="gallery-caption">Текст под снимката 1</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/placeholder2.jpg" alt="Снимка 2">
+        <p class="gallery-caption">Текст под снимката 2</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/placeholder3.jpg" alt="Снимка 3">
+        <p class="gallery-caption">Текст под снимката 3</p>
+      </div>
+    </div>
+
+  </section>
+</main>
+<footer>&copy; 2025 Мегданъ</footer>
+</body>
+</html>
