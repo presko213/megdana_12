@@ -1,20 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="bg">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Курсове - Мегданъ</title>
-<link rel="stylesheet" href="style.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>МегданЪ</title>
 <style>
+  /* Ресет и основен стил */
   body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f9f9f9;
-    overflow-x: hidden;
+    background-color: #f0f6ff;
   }
 
-  /* Лява лента */
+  /* Навигация */
+  nav {
+    background-color: #004a99;
+    color: white;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2000;
+  }
+
+  nav .logo {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Лява шевица */
   .sidebar-left {
     width: 150px;
     background-image: url('12.png');
@@ -22,13 +61,13 @@
     background-position: center;
     background-size: 400px auto;
     position: fixed;
-    top: 0;
+    top: 60px;
     bottom: 0;
     left: 0;
     z-index: 1000;
   }
 
-  /* Дясна лента */
+  /* Дясна шевица */
   .sidebar-right {
     width: 150px;
     background-image: url('12.png');
@@ -36,94 +75,62 @@
     background-position: center;
     background-size: 400px auto;
     position: fixed;
-    top: 0;
+    top: 60px;
     bottom: 0;
     right: 0;
     z-index: 1000;
     transform: scaleX(-1);
   }
 
-  /* Основен контейнер */
-  .container {
+  /* Основно съдържание */
+  main {
     max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
-    position: relative;
-    z-index: 10;
-  }
-
-  header nav {
-    background: #fff;
-    padding: 10px;
-    border-bottom: 2px solid #ccc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 15px;
-  }
-
-  header nav a {
-    text-decoration: none;
-    color: #333;
-  }
-
-  section.content {
-    background: #fff;
-    padding: 20px;
+    padding: 80px 20px 20px;
+    background: white;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-top: 20px;
+    position: relative;
+    z-index: 1500;
   }
 
-  h1, h2 {
-    color: #b30000;
+  h1 {
+    text-align: center;
+    color: #004a99;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.5em;
   }
 </style>
 </head>
 <body>
 
+<!-- Навигация -->
+<nav>
+  <div class="logo">МегданЪ</div>
+  <ul>
+    <li><a href="#">Начало</a></li>
+    <li><a href="#">Защо да танцувам</a></li>
+    <li><a href="#">Курсове</a></li>
+    <li><a href="#">Галерия</a></li>
+    <li><a href="#">Контакти</a></li>
+  </ul>
+</nav>
+
+<!-- Лява и дясна шевица -->
 <div class="sidebar-left"></div>
 <div class="sidebar-right"></div>
 
-<div class="container">
-<header>
-<nav>
-  <div class="logo">Мегданъ</div>
-  <ul>
-    <li><a href="index.html">Начало</a></li>
-    <li><a href="why.html">Защо да танцувам</a></li>
-    <li><a href="classes.html">Курсове</a></li>
-    <li><a href="gallery.html">Галерия</a></li>
-    <li><a href="contact.html">Контакти</a></li>
-  </ul>
-</nav>
-</header>
-
+<!-- Основно съдържание -->
 <main>
-  <section class="content">
-    <h1>Курсове</h1>
-    <p>Предлагаме групи за различни възрасти и нива. Виж графика и избери подходящата група.</p>
-    <div class="section-block">
-      <h2>График</h2>
-      <ul>
-        <li><strong>Начинаещи</strong> – понеделник и сряда, 18:30 ч.</li>
-        <li><strong>Средно напреднали</strong> – вторник и четвъртък, 19:00 ч.</li>
-        <li><strong>Деца</strong> – събота и неделя, 10:00 ч.</li>
-      </ul>
-    </div>
-    <div class="section-block">
-      <h2>Занятия за деца</h2>
-      <p>Игрови подход, музика и първи стъпки в народните танци.</p>
-    </div>
-  </section>
+  <h1>Добре дошли в МегданЪ</h1>
+  <p>
+    Това е примерен текст. Тук можете да сложите информация за вашата дейност, снимки или други елементи.  
+    Страничните шевици остават фиксирани, докато се скролва, а навигацията винаги е горе.
+  </p>
 </main>
-</div>
 
 </body>
 </html>
