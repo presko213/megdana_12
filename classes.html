@@ -3,8 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>МегданЪ</title>
+<title>МегданЪ</title> 
+  
+  <header>
+<nav>
+  <div class="logo">Мегданъ</div>
+  <ul>
+    <li><a href="index.html">Начало</a></li>
+    <li><a href="why.html">Защо да танцувам</a></li>
+    <li><a href="classes.html">Курсове</a></li>
+    <li><a href="gallery.html">Галерия</a></li>
+    <li><a href="contact.html">Контакти</a></li>
+  </ul>
+</nav>
+</header>
+  
 <style>
+  
+
   /* Ресет и основен стил */
   body {
     margin: 0;
@@ -12,27 +28,7 @@
     background-color: #f0f6ff;
   }
 
-  /* Навигация */
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #004a99;
-    color: white;
-    z-index: 2000;
-    padding: 10px 0;
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
+ 
   nav .logo {
     font-size: 1.4em;
     font-weight: bold;
@@ -67,7 +63,7 @@
     background-position: center;
     background-size: 400px auto;
     position: fixed;
-    top: 60px; /* под навигацията */
+    top: 60px;
     bottom: 0;
     left: 0;
     z-index: 1000;
@@ -92,7 +88,7 @@
   main {
     max-width: 900px;
     margin: 0 auto;
-    padding: 100px 20px 20px; /* 100px за да не се застъпва с менюто */
+    padding: 80px 20px 20px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -113,19 +109,6 @@
 </head>
 <body>
 
-<!-- Навигация -->
-<header>
-<nav>
-  <div class="logo">Мегданъ</div>
-  <ul>
-    <li><a href="index.html">Начало</a></li>
-    <li><a href="why.html">Защо да танцувам</a></li>
-    <li><a href="classes.html">Курсове</a></li>
-    <li><a href="gallery.html">Галерия</a></li>
-    <li><a href="contact.html">Контакти</a></li>
-  </ul>
-</nav>
-</header>
 
 <!-- Лява и дясна шевица -->
 <div class="sidebar-left"></div>
