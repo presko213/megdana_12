@@ -20,8 +20,8 @@ nav a.active, nav a:hover { background: rgba(255,255,255,0.08); }
 
 /* Layout */
 .container { max-width:1200px; margin:20px auto; display:flex; gap:20px; padding:0 20px; }
-.sidebar { width:100px; background:none; border-radius:8px; padding:10px; border:1px solid #e0e6ef; align-self:flex-start; }
-.sidebar img { width:100%; display:block; }
+.sidebar { width:100px; background:transparent; border-radius:8px; padding:10px; border:1px transparent; align-self:flex-start; }
+.sidebar img { width:100%; display:transparent; }
 
 .content { flex:1; background: white; border-radius:8px; padding:24px; box-shadow: 0 6px 18px rgba(10,30,80,0.06); position:relative; }
 
