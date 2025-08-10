@@ -1,50 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Мегданъ - Начало</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    /* Добавих CSS за страничните ленти */
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>МегданЪ</title>
+<style>
+  /* Ресет и основен стил */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f6ff;
+  }
 
-    body {
-      margin: 0;
-      display: flex;
-      min-height: 100vh;
-      background: #f9f9f9;
-      font-family: Arial, sans-serif;
-      overflow-x: hidden;
-    }
+  <header>
+<nav>
+  <div class="logo">Мегданъ</div>
+  <ul>
+    <li><a href="index.html">Начало</a></li>
+    <li><a href="why.html">Защо да танцувам</a></li>
+    <li><a href="classes.html">Курсове</a></li>
+    <li><a href="gallery.html">Галерия</a></li>
+    <li><a href="contact.html">Контакти</a></li>
+  </ul>
+</nav>
+</header>
 
-    /* Лява лента */
-    .sidebar-left {
-      width: 150px;
-      background-image: url('12.png');
-      background-repeat: repeat-y;
-      background-position: center;
-      background-size: 400px auto;
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 1000;
-    }
+  nav .logo {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
 
-    /* Дясна лента */
-    .sidebar-right {
-      width: 150px;
-      background-image: url('12.png');
-      background-repeat: repeat-y;
-      background-position: center;
-      background-size: 400px auto;
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 1000;
-      transform: scaleX(-1); /* Обръщане на изображението за огледален ефект */
-    }
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Лява шевица */
+  .sidebar-left {
+    width: 150px;
+    background-image: url('12.png');
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 400px auto;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  /* Дясна шевица */
+  .sidebar-right {
+    width: 150px;
+    background-image: url('12.png');
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 400px auto;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    transform: scaleX(-1);
+  }
 
     /* Основно съдържание, с отстояние от лентите */
     main.container {
